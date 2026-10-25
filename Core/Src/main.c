@@ -113,13 +113,13 @@ int main(void)
     }
 
     HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin,
-        (led_step == 0U) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+        (led_step == 0U) ? GPIO_PIN_RESET : GPIO_PIN_SET);
 
     HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,
-        (led_step == 1U) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+        (led_step == 1U) ? GPIO_PIN_RESET : GPIO_PIN_SET);
 
     HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin,
-        (led_step == 2U) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+        (led_step == 2U) ? GPIO_PIN_RESET : GPIO_PIN_SET);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
